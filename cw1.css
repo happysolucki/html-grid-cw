@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav section aside"
+    "footer footer footer";
+
+  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  gap: 10px;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  background-color: lightgray;
+}
+
+section {
+  grid-area: section;
+  background-color: gray;
+}
+
+aside {
+  grid-area: aside;
+  background-color: lightgray;
+}
+
+footer {
+  grid-area: footer;
+}
+
+header,
+footer {
+  background-color: darkgray;
+}
